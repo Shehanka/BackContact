@@ -34,7 +34,7 @@ function main(string... args) {
 
     match response {
         xml xmlRes => {
-            string name = xmlRes.select("text");
+            string name = xmlRes.elements().getTextValue();
             io:println(name);
         }
         error err => {
