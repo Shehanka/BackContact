@@ -20,10 +20,6 @@ endpoint gsheets4:Client spreadsheetEP {
             clientId:config:getAsString("CLIENT_ID"),
             clientSecret:config:getAsString("CLIENT_SECRET"),
             refreshToken:config:getAsString("REFRESH_TOKEN")
-            //accessToken:accessToken,
-            //clientId:clientId,
-            //clientSecret:clientSecret,
-            //refreshToken:refreshToken:"1/b4a2gTb2zhrg218eeBTWwE0KOwjYCGUkTkFS9EcJnjc"
         }
     }
 };
