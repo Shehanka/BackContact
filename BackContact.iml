@@ -7,5 +7,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="BALLERINA_REPOSITORY &lt;BackContact&gt;" level="project" />
+    <orderEntry type="library" name="BALLERINA_REPOSITORY &lt;BackContact&gt;" level="project" />
   </component>
 </module>

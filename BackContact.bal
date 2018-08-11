@@ -16,10 +16,10 @@ endpoint gcontacts3:Client gContactsEP {
 endpoint gsheets4:Client spreadsheetEP {
     clientConfig:{
         auth:{
-            accessToken:accessToken,
-            clientId:clientId,
-            clientSecret:clientSecret,
-            refreshToken:refreshToken
+            //accessToken:accessToken,
+            //clientId:clientId,
+            //clientSecret:clientSecret,
+            //refreshToken:refreshToken
         }
     }
 };
