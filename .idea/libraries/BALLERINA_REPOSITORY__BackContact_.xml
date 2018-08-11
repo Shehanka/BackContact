@@ -3,13 +3,11 @@
     <CLASSES>
       <root url="file://$USER_HOME$/.ballerina/caches/central.ballerina.io/marcus" />
       <root url="file://$USER_HOME$/.ballerina/caches/central.ballerina.io/wso2" />
-      <root url="file://$USER_HOME$/.ballerina/caches/central.ballerina.io/erandig" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
       <root url="file://$USER_HOME$/.ballerina/caches/central.ballerina.io/marcus" />
       <root url="file://$USER_HOME$/.ballerina/caches/central.ballerina.io/wso2" />
-      <root url="file://$USER_HOME$/.ballerina/caches/central.ballerina.io/erandig" />
     </SOURCES>
     <excluded>
       <root url="file://$PROJECT_DIR$" />

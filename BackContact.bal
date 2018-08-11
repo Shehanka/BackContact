@@ -17,9 +17,9 @@ endpoint gcontacts3:Client gContactsEP {
 endpoint gsheets4:Client spreadsheetEP {
     clientConfig:{
         auth:{
-            clientId:"574730957218-f0pn58b32dnr24sju9b707ank37c8b0o.apps.googleusercontent.com",
-            clientSecret:"nxA8D1-6u-Y1t8K_zCSpcIDI",
-            refreshToken:"1/b4a2gTb2zhrg218eeBTWwE0KOwjYCGUkTkFS9EcJnjc"
+            clientId:config:getAsString("CLIENT_ID"),
+            clientSecret:config:getAsString("CLIENT_SECRET"),
+            refreshToken:config:getAsString("REFRESH_TOKEN")
             //accessToken:accessToken,
             //clientId:clientId,
             //clientSecret:clientSecret,
