@@ -30,8 +30,10 @@ endpoint gsheets4:Client spreadsheetEP {
 
 function main(string... args) {
     string userEmail = "default";
+    string spreadsheetId = "1YrRVHMwnHMSAsxX7zwHoOBqM3MfxP4vM1tDudblDWt8";
 
     var response = gContactsEP -> getAllContacts(userEmail);
+    var responseSpread = spreadsheetEP -> openSpreadsheetById(spreadsheetId);
 
     match response {
         xml xmlRes => {
@@ -40,5 +42,12 @@ function main(string... args) {
         error err => {
             io:println(err);
         }
+    }
+
+    match response {
+        //If successful, returns the Spreadsheet object.
+        gsheets4:Spreadsheet spreadsheetRes => io:println(spreadsheetRes);
+        //Unsuccessful attempts return a SpreadsheetError.
+        gsheets4:SpreadsheetError err => io:println(err);
     }
 }
