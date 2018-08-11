@@ -5,24 +5,24 @@ import wso2/gsheets4;
 endpoint gcontacts3:Client gContactsEP {
     clientConfig:{
         auth:{
-            accessToken:"ya29.Glv2Be5E25SajSSZfVogNs2iEYqlkZpXLj4WD2sfjhDAC-vQ45GITc2zEgyiTSC8Yexohunx8iRbhMJfXsDR_uO3d-N1Q0rnBZ5y5fLeeY651en1gSZPbD-Ja3oo"
-            //clientId:config:getAsString("CLIENT_ID"),
-            //clientSecret:config:getAsString("CLIENT_SECRET"),
-            //refreshToken:config:getAsString("REFRESH_TOKEN")
+            accessToken:"ya29.Glv2BUHtYZMzNDW4vjBCGRDjtFaKzeA8LefylW9lW2kyDBAtx-CC6ffBTBfJPaIS3zKqElfOvJXepMPDlGliixR5-rbzoi_5xuRTfvMM6Tv4loUH8l_fKoDdTi82",
+            clientId:"574730957218-f0pn58b32dnr24sju9b707ank37c8b0o.apps.googleusercontent.com",
+            clientSecret:"nxA8D1-6u-Y1t8K_zCSpcIDI",
+            refreshToken:"1/b4a2gTb2zhrg218eeBTWwE0KOwjYCGUkTkFS9EcJnjc"
         }
     }
 };
 
-endpoint gsheets4:Client spreadsheetEP {
-    clientConfig:{
-        auth:{
-            //accessToken:accessToken,
-            //clientId:clientId,
-            //clientSecret:clientSecret,
-            //refreshToken:refreshToken
-        }
-    }
-};
+//endpoint gsheets4:Client spreadsheetEP {
+//    clientConfig:{
+//        auth:{
+//            //accessToken:accessToken,
+//            //clientId:clientId,
+//            //clientSecret:clientSecret,
+//            //refreshToken:refreshToken
+//        }
+//    }
+//};
 
 function main(string... args) {
     string userEmail = "default";
