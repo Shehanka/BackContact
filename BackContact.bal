@@ -41,11 +41,4 @@ function main(string... args) {
             io:println(err);
         }
     }
-
-    //match response {
-    //    //If successful, returns the Spreadsheet object.
-    //    gsheets4:Spreadsheet spreadsheetRes => io:println(spreadsheetId);
-    //    //Unsuccessful attempts return a SpreadsheetError.
-    //    gsheets4:SpreadsheetError err => io:println(err);
-    //}
 }
