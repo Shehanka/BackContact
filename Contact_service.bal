@@ -4,9 +4,8 @@ import ballerina/http;
 import marcus/gcontacts3;
 import ballerina/config;
 import ballerina/io;
-documentation {
-   A service endpoint represents a listener.
-}
+
+
 endpoint http:Listener listener {
     port:9090
 };
@@ -22,10 +21,6 @@ endpoint gcontacts3:Client gContactsEP {
     }
 };
 
-documentation {
-   A service is a network-accessible API
-   Advertised on '/hello', port comes from listener endpoint
-}
 
 function validate(string input) returns @untainted string {
     string regEx = "[^a-zA-Z]";
@@ -34,17 +29,10 @@ function validate(string input) returns @untainted string {
 
 service<http:Service> serviceMain bind listener {
 
-    documentation {
-       A resource is an invokable API method
-       Accessible at '/hello/sayHello
-       'caller' is the client invoking this resource 
-
-       P{{caller}} Server Connector
-       P{{request}} Request
-    }
+  
     getContent (endpoint caller, http:Request request) {
         string userEmail = "default";
-        var response = gContactsEP -> getAllContacts(userEmail);
+        var response = gContactsEP -> getAllContacts (userEmail);
         string name;
         match response {
             xml xmlRes => {
