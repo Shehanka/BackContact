@@ -12,3 +12,4 @@ To invoke service run  -->
 curl https://localhost:9090/serviceMain/getContent
 
 License
+MIT
