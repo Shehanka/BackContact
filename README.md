@@ -4,6 +4,7 @@
 [![GitHub](https://img.shields.io/github/forks/Shehanka/BackContact.svg?style=flat-square)](https://github.com/Shehanka/BackContact/network)
 
 
+
 This system Load Google contacts into a spreadsheet. 
 
 ## Getting Started
@@ -29,4 +30,11 @@ curl https://localhost:9090/serviceMain/getContent
                  
 See also the list of [contributors]() who participated in this project.
 Load Google contacts into a spreadsheet
+
+=======
+new Service run included --> 
+run Contact_service as usual and use cURL to invoke the service
+
+To invoke service run  -->
+` curl https://localhost:9090/serviceMain/getContent `
 
